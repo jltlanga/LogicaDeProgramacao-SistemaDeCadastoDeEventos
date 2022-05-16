@@ -12,11 +12,13 @@ if (dataDoEvento <= dataAtual) {
     let idadeParticipante = parseInt(entrada.question('Informe a idade do participante: '));
     if(idadeParticipante < 18){
         console.log('Cadastro não permitido pela idade');
+        console.log('Fim');
 
     }else{
         let qntdDeParticipantes = parseInt(entrada.question('Informe a número de participantes: '));
         if(qntdDeParticipantes > 4){
             console.log('Cadastro não permitido, limite excedito');
+            console.log('Fim');
            
         }else{
               let nomePalestrante = entrada.question('Informe o nome do palestrante: ');
@@ -31,6 +33,7 @@ if (dataDoEvento <= dataAtual) {
                 }
                 
         }
+        console.log('Fim');
             
             
 
